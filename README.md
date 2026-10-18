@@ -4,7 +4,7 @@
 
 Projet personnel de **Robin PLACE**, Repères rassemble un calendrier, des souvenirs illustrés, des tâches récurrentes et des suivis d’habitudes dans une interface en français, adaptée à l’ordinateur et au mobile.
 
-![Calendrier de Repères avec des données fictives](docs/images/calendrier.png)
+![Calendrier de Repères avec des données fictives](docs/images/calendrier.jpg)
 
 **Next.js · React · TypeScript · SQLite · Supabase · Tailwind CSS**
 
