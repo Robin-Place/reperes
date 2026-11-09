@@ -31,7 +31,7 @@ L’application en ligne demande un compte personnel. Les captures ci-dessus peu
 - **Retrouver le dernier ajout** : voir quand un compteur a été augmenté pour la dernière fois, par exemple pour suivre un forfait de repas.
 - **Personnaliser son espace** : choisir une couleur ou une photo de fond depuis « Mon espace ».
 
-Cette version est en cours de validation avant sa mise en ligne. Sur iPhone, les notifications nécessitent d’ajouter Repères à l’écran d’accueil depuis Safari et de les autoriser dans l’application.
+Cette version est prête pour la mise en ligne. Une notification de test a été reçue dans Chrome après fermeture de l’onglet. Sur iPhone, il faut ajouter Repères à l’écran d’accueil depuis Safari et autoriser les notifications dans l’application.
 
 ## Choix techniques
 
