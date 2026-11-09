@@ -24,19 +24,28 @@ Les rendez-vous, les choses à faire et les souvenirs d’une même semaine se r
 
 L’application en ligne demande un compte personnel. Les captures ci-dessus peuvent être consultées sans inscription et contiennent uniquement des données fictives.
 
+## L’itération de novembre
+
+- **Partager à son rythme** : inviter quelqu’un à voir un événement ou créer un tag collectif auquel les membres acceptés peuvent contribuer. Chacun peut donner au tag un nom qui lui parle.
+- **Se rappeler au bon moment** : choisir un jour et une heure pour recevoir un rappel sur un appareil autorisé, pour un événement à venir ou une tâche.
+- **Retrouver le dernier ajout** : voir quand un compteur a été augmenté pour la dernière fois, par exemple pour suivre un forfait de repas.
+- **Personnaliser son espace** : choisir une couleur ou une photo de fond depuis « Mon espace ».
+
+Cette version est en cours de validation avant sa mise en ligne. Sur iPhone, les notifications nécessitent d’ajouter Repères à l’écran d’accueil depuis Safari et de les autoriser dans l’application.
+
 ## Choix techniques
 
 L’interface utilise React et TypeScript dans une application Next.js. Un mode SQLite permet l’utilisation sur un ordinateur personnel ; Supabase fournit l’authentification et le stockage pour l’accès en ligne depuis plusieurs appareils.
 
 Les données et les photos sont séparées entre comptes. Les dates sont traitées comme des jours civils afin de conserver la bonne journée malgré les changements d’heure. Les récurrences préservent leur jour d’origine, y compris après un mois plus court.
 
-Les règles métier, les sauvegardes et l’API disposent de tests automatisés. Une vérification GitHub contrôle aussi la qualité du code et la construction de l’application.
+Les règles métier, les sauvegardes, l’API et les règles d’accès PostgreSQL disposent de tests automatisés. Une vérification GitHub contrôle aussi la qualité du code et la construction de l’application.
 
 [Lire les choix de conception et leurs compromis](docs/choix-techniques.md).
 
 ## Un projet qui évolue
 
-Ce projet personnel réunit conception d’interface, règles métier, persistance, authentification, tests et mise en ligne. Les limites actuelles sont explicites : pas de notifications, de fonctionnement hors connexion ou de partage d’événements entre comptes. Les changements effectués depuis un autre appareil apparaissent après actualisation.
+Ce projet personnel réunit conception d’interface, règles métier, persistance, authentification, tests et mise en ligne. Une connexion est nécessaire pour consulter le journal. Les changements effectués depuis un autre appareil apparaissent après actualisation ou au retour sur l’application.
 
 ## Auteur et accès aux sources
 

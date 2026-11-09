@@ -16,6 +16,8 @@ Ce choix évite d’imposer un service externe pour essayer l’application loca
 
 Le serveur détermine l’identité de l’utilisateur connecté et rattache chaque enregistrement à son propriétaire. En ligne, les règles d’accès de la base limitent aussi les données au compte concerné. Les photos sont stockées dans un espace privé et leur lecture nécessite une authentification.
 
+Le partage de novembre ajoute un accès limité après acceptation d’une invitation. Les événements reçus sont consultables ; seul l’auteur peut modifier son événement. Dans un tag collectif, les membres ajoutent leurs propres événements et peuvent renommer le tag dans leur espace. L’export ne copie pas les événements reçus.
+
 Avant envoi, les photos sont réduites pour limiter l’espace utilisé et les temps de transfert. Ces versions servent à la consultation ; les originaux doivent être conservés séparément.
 
 ## Des sauvegardes transportables
@@ -26,10 +28,12 @@ La restauration peut être partielle si la connexion s’interrompt. Les éléme
 
 ## Vérifier les évolutions
 
-Les tests couvrent notamment les années bissextiles, les fins de mois, les changements d’heure, la recherche en français et les sauvegardes. Les essais API utilisent deux comptes dans une base locale temporaire pour vérifier les accès, les références et les photos.
+Les tests couvrent notamment les années bissextiles, les fins de mois, les changements d’heure, la recherche en français et les sauvegardes. Les essais API utilisent deux comptes dans une base locale temporaire pour vérifier les accès, les références et les photos. Les migrations et les règles d’accès du partage sont aussi testées avec PostgreSQL.
 
 Les tests, l’analyse du code et la construction sont automatisés sur GitHub. Les réglages d’authentification du service hébergé et l’usage sur un téléphone réel demandent des vérifications complémentaires.
 
 ## Compromis actuels
 
-Repères privilégie un espace personnel simple. L’écran se met à jour à l’actualisation lorsqu’une modification provient d’un autre appareil. Les modifications simultanées du même élément conservent le dernier enregistrement. Le partage entre comptes, les notifications et l’accès hors connexion restent des évolutions possibles.
+Repères privilégie un espace personnel simple. L’écran se met à jour à l’actualisation lorsqu’une modification provient d’un autre appareil. Les modifications simultanées du même élément conservent le dernier enregistrement. Une connexion reste nécessaire pour consulter le journal.
+
+Pour les rappels, le service en ligne vérifie toutes les cinq minutes si un envoi attend. Un appareil doit s’inscrire volontairement ; la notification affichée ne dévoile pas le titre de l’événement ou de la tâche. La connexion et les réglages de l’appareil peuvent différer sa réception.
